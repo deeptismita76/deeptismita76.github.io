@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Form</title>
+    </head>
+    <body>
+        <form>
+            <div>
+                <lable>Name :</lable>
+                <input type="text" placeholder="Enter Name" minlength="2" maxlength="10">
+            </div>
+            <div>
+                <lable>DOB :</lable>
+                <input type="date" placeholder="Enter Date of Birth">
+            </div>
+            <div>
+                <lable>Age :</lable>
+                <input type="number" placeholder="Enter age"  min="1" max="100">
+            </div>
+            <div>
+                <label>Gender :</label>
+                <input type = "radio" name="gender" checked>Female
+                <input type = "radio" name="gender">Male
+                <input type = "radio" name="gender">other
+            </div>
+            <div>
+                <label>City</label>
+                    <select>
+                        <option>--Select City--</option>
+                        <option selected>Berhampur</option>
+                        <option disabled>Bangalore</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                    </select>
+            </div>
+            <div>
+                <lable>MobileNO :</lable>
+                <input type="tel" placeholder="Enter Mobile Number">
+            </div>
+            <div>
+                <lable>Address :</lable>
+               <input type="text" placeholder="Enter Address">
+            </div>
+            <div>
+                <label>Upload File</label>
+                <input type="file">
+            </div>
+            <button type="button">Submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </body>
+</html>
