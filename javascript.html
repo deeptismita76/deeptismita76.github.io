@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("welcome to javascript")
+
+        var eg;
+        console.log(eg)
+        console.log(typeof(eg))
+        eg = "javascript"
+        console.log(typeof(eg))
+        console.log(eg)
+        eg= 123.889
+        console.log(typeof(eg))
+        console.log(eg)
+        eg = true
+        console.log(typeof(eg))
+        console.log(eg)
+        eg=null
+        console.log(typeof(eg))
+
+        function display(){
+            console.log("calling display")
+            var displayMessage = document.getElementById("message")
+            console.log(displayMessage)
+            displayMessage.innerHTML ="calling message"
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Introduction to javascript</h1>
+    <button onmouseover="display()" onclick="display">Display</button>
+    <div id="message"></div>
+</body>
+</html>

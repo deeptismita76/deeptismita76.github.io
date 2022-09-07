@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            console.log("calling add")
+            var a = document.getElementById("num1")
+            var b = document.getElementById("num2")
+            var c = parseInt(a.value)+parseInt(b.value)
+            var output = document.getElementById("add")
+            console.log(output)
+            output.innerHTML=c
+            
+
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+        <label >enter num1 :</label>
+        <input type="text" name="num1" id="num1">
+        </div>
+        <label >enter num2 :</label>
+        <input type="text" name="num1" id="num2">
+        <div>
+        <button type="button" onclick="add()">add</button>
+        </div>
+        <div id="add"></div>
+    </form>
+</body>
+</html>
